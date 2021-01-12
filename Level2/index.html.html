@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+    
+</head>
+<body>     
+    <div class="content">
+        <div class="image-header"></div>
+        <div class="form-section">
+            <div class="form-section--header">
+                <h1>Let's work together</h1>
+                <p>We'd love to hear from you! Send us a message using the form below, or email us.</p>
+            </div>
+            
+            <form action="">
+                <div class="name">
+                    <label for="first_name">
+                        <p>First Name</p>
+                        <input type="text" name="first_name" id="first_name" required>
+                    </label>
+
+                    <label for="last_name">
+                        <p>Last Name</p>
+                        <input type="text" name="last_name" id="last_name" required>
+                    </label>
+                </div>
+
+                <label for="email">
+                    <p>Email</p>
+                    <input id="email" type="email" required>
+                </label>
+                
+                <label for="company">
+                    <p>Company</p>
+                    <input type="text" name="company" id="company" required>
+                </label>        
+                
+                <label for="phone" class="flex">
+                    <p>Phone <span class="sub-label">Optional</span></p>
+                    <input type="tel" id="phone" name="phone" required>
+                </label>
+                
+                <label for="help" class="flex">
+                    <p>How can we help you? <span class="sub-label">Max. 500 characters</span></p>
+                    <textarea name="help" id="help" cols="" rows="10"c></textarea>
+                </label>
+
+                <label for="budget" class="budget">
+                    <p>Expected budget</p>
+                    <input id="less-than-25k" name="budget" type="radio" required>
+                    <label for="less-than-25k" class="radio-label"><p>Less than $25k</p></label><br>
+                    <input id="25k-to-50k" name="budget"" type="radio" required>
+                    <label for="50k-to-100k" class="radio-label"><p>$25k - $50k</p></label><br>
+                    <input id="50k-to-100k" name="budget"" type="radio" required>
+                    <label for="50k-to-100k" class="radio-label"><p>$50k - $100k</p></label><br>
+                    <input id="above-100k" name="budget"" type="radio" required>
+                    <label for="above-100k" class="radio-label"><p>$100k+</p></label><br>
+                </label>
+                
+                <label for="know">
+                    <p>How did you hear about us?</p>
+                    <input id="know" name="know" required>
+                </label>
+                
+                <div>
+                    <input id="submit" name="submit" type="submit" value="SUBMIT" formaction="./thankyou.html">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

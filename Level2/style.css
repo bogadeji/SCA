@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.image-header {
+    order: 2;
+    background: url(https://res.cloudinary.com/bogadeji/image/upload/v1610449392/Spaces-co-working-office_ecgayh.jpg) center center no-repeat;
+    background-size: cover;
+    background-position: center;
+} 
+
+.form-section {
+    margin: 50px 100px 50px 0px;
+}
+h1 {
+    margin: 0;
+}
+p {
+    color: #afb0b2;
+}
+.form-header h1 {
+    font-size: 2rem;
+    font-weight: 900;
+} 
+.form-section--header p {
+    font-size: 1rem;
+    margin: 10px 0;
+    line-height: 22px;
+}
+form {
+    margin: 20px 0;
+}
+form input, textarea {
+    width: 100%;
+    border: 2px solid #eaeaea;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+label {
+    margin: 20px 0;
+}
+label.flex p {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+label p {
+    font-weight: 800;
+    color: #b4b5b7;
+}
+label span {
+    font-weight: 100;
+    font-style: italic;
+}
+form input {
+    height: 30px;
+}
+label.budget p {
+    margin-bottom: 10px;
+}
+.radio-label p {
+    display: inline-block
+}
+form input[type="submit"], form input[type="radio"]{
+    height: unset;
+    width: unset;
+}
+form input[type="submit"] {
+    width: unset;
+    float: right;
+    background-color: #514ddb;
+    color: #fff;
+    padding: 10px 20px;
+    border: unset;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+@media screen and (max-width: 411px) {
+    label.flex p {
+        flex-direction: column;
+        justify-content: center;
+    }
+    label span {
+        margin-top: 3px;
+    }
+}
+@media screen and (min-width: 650px) {
+    
+    form .name {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+    form .name label {
+        width: 45%;
+    }
+}
+@media screen and (max-width: 799px) {
+    .content {
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .image-header {
+        order: 1;
+        height: 400px;
+        width: 100%;
+        background-size: cover;
+    }
+    .form-section {
+        margin: 0;
+        padding: 50px 30px;
+    }
+}
+@media screen and (min-width: 800px) {
+    .image-header {
+        min-height: 100vh;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+    }
+    .form-section {
+        max-width: 90%;
+        position: absolute;
+        left: 30px;
+        top: 0;
+        right: 50%;
+        top: 0;
+        bottom: 0;
+    }
+    .response {
+        margin-top: 50%;
+    }
+    .response h1 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .form-section {
+        margin: 50px 50px 50px 0px;
+    }
+}
